@@ -1,0 +1,1 @@
+cat ol_dump_latest.txt | awk -F $'\t' 'BEGIN {OFS = FS} { print $5 }' | jq 'if .ocaid == null then empty else .ocaid end' | sed s/\"//g 
