@@ -14,11 +14,9 @@ for line in open('marc_urls.txt'):
         error.write(line)
 
     count += 1
-    time.sleep(0.3)
-    if (count % 10) == 0:
-        print count
+    time.sleep(0.3) #try to be nice to IA servers
     if (count % 1000) == 0:
-        break
+        time.sleep(600) #try to be nice to IA servers
 
 writer.close()
 
