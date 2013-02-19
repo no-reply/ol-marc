@@ -1,0 +1,9 @@
+Installation
+------------
+
+```
+% git clone https://github.com/no-reply/ol-marc.git
+% virtualenv --no-site-packages ENV
+(ENV)% source ENV/bin/activate
+(ENV)% pip install -r requirements.txt
+```
